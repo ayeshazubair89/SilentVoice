@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE=Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <!-- iOS meta tags & icons -->
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="flutter_firebase_tasks">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>flutter_firebase_tasks</title>
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    // The value below is injected by flutter build, do not touch.
+    const serviceWorkerVersion = null;
+  </script>
+  <!-- This script adds the flutter initialization JS code -->
+  <script src="flutter.js" defer></script>
+
+  <!-- Add Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-app-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-analytics-compat.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/9.8.1/firebase-auth-compat.js"></script>
+
+  <!-- Your Firebase Configuration -->
+  <script>
+    const firebaseConfig = {
+      apiKey: "AIzaSyAPZs7e-cdy-htJgxAG0B1hFh1KEZKiFIU",
+      authDomain: "flutterfirebasetasks.firebaseapp.com",
+      projectId: "flutterfirebasetasks",
+      storageBucket: "flutterfirebasetasks.appspot.com",
+      messagingSenderId: "358595115637",
+      appId: "1:358595115637:web:956180762b72beaa8cd63c",
+      measurementId: "G-GMFT5HPE7N"
+    };
+
+    // Initialize Firebase
+    firebase.initializeApp(firebaseConfig);
+    firebase.analytics();
+  </script>
+</head>
+<body>
+<script>
+    window.addEventListener('load', function(ev) {
+      // Download main.dart.js
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          engineInitializer.initializeEngine().then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>
